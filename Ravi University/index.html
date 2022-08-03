@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+   <meta charset="UTF-8" />
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!-- add cdn file for swiper.css library -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="index.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://kit.fontawesome.com/d0c6f360c1.js" crossorigin="anonymous"></script>
+
+   <title>Ravi University,Chandigarh</title>
+</head>
+
+<body>
+   <!-- Navbar code start from here -->
+   <nav class="navlist">
+      <ul>
+         <li>
+            <h2>Ravi University.</h2>
+         </li>
+         <li><a href="">Home</a></li>
+         <li><a href="">About</a></li>
+         <li><a href="#center">Course</a></li>
+         <li><a href="#faculty">Faculty</a></li>
+      </ul>
+   </nav>
+   <!-- Main-header for college code start from here -->
+   <div class="main-box">
+      <h1>RAVI UNIVERSITY, CHANDIGARH</h1>
+      <p>India's One Of The Best Engeneering College</p>
+      <button onclick="div_show()">ENROLL NOW</button>
+   </div>
+
+   <a href="/faq.html">
+      <div id="faq">Frequently Asked Question<span><i class="fas fa-question"></i></span></div>
+   </a>
+ <!-- Enrollment form html code start from here -->
+   <div id="wrapper">
+         <div class="info">
+            <h3>Student Enrollment Form</h3>
+         </div>
+         <div class="close-button"><img src="/image/close.png" class="img"></div>
+         <form action="#" method="POST">
+            <fieldset class="contact-info">
+               <div class="container">
+                  <span>Contact Information</span>
+                  <p>
+                     <label for="name">Full Name</label>
+                     <input type="text" id="name" name="user_name" placeholder="Required"
+                        title="Please fill out this field">
+                  </p>
+
+                  <p>
+                     <label for="email">Email Address</label>
+                     <input type="email" id="email" name="user_email" placeholder="Required"
+                        title="Please fill out this field">
+                  </p>
+                  <p>
+
+
+                     <label for="dob">Date of Birth</label>
+                     <input type="date" id="dob" name="day" />
+
+
+                  </p>
+                  <p>
+                     <label for="gender">Gender</label>
+                     <input id="female" type="radio" name="gender" value="female">
+                     <label for="female">Female</label>
+
+                     <input id="male" type="radio" name="gender" value="male">
+                     <label for="male">Male</label>
+                  </p>
+                  <p>
+                     <label for="mobile">Mobile No.</label>
+                     <input type="number" id="mobile" name="mobile_no">
+                  </p>
+                  <p>
+                     <label for="address">Address</label>
+                     <input type="text" id="address" name="user_address">
+                  </p>
+                  <p>
+                     <label for="state">State</label>
+                     <select id="state" name="user_state">
+                        <option value="state">Choose State</option>
+                        <option value="ASSAM">ASSAM</option>
+                        <option value="BIHAR">BIHAR</option>
+                        <option value="CHANDIGARH">CHANDIGARH</option>
+                        <option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option>
+                        <option value="KOLKATA">KOLKATA</option>
+                        <option value="UTTAR PRADESH">UTTAR PRADESH</option>
+                        <option value="KERLA">KERLA</option>
+                        <option value="GOA">GOA</option>
+                        <option value="GUJARAT">GUJARAT</option>
+                        <option value="RAJASTHAN">RAJASTHAN</option>
+                        <option value="HARYANA">HARYANA</option>
+                        <option value="DELHI">DELHI</option>
+                        <option value="JHARKAND">JHARKAND</option>
+                        <option value="UTTRAKHAND">UTTRAKHAND</option>
+                        <option value="MADHYA PRADESH">MADHYA PRADESH</option>
+                        <option value="KARNATKA">KARNATKA</option>
+                        <option value="ODISHA">ODISHA</option>
+                     </select>
+                  </p>
+                  <p>
+                     <label for="zipcode">Pincode</label>
+                     <input type="number" id="zipcode" name="user_zipcode">
+                  </p>
+               </div>
+            </fieldset>
+
+            <fieldset class="newsletter">
+               <div class="container">
+                  <span>Academic</span>
+
+
+                  <div id="degree">
+                     <label for="course">Select the Course you would like to Enroll</label>
+                     <p>
+                        <input type="radio" id="bcom" name="course" value="bcom">
+                        <label for="bcom">B.Com</label>
+                     </p>
+                     <p>
+                        <input type="radio" id="btech" name="course" value="btech">
+                        <label for="btech">B.Tech</label>
+                     </p>
+                     <p>
+                        <input type="radio" id="bsc" name="course" value="bsc">
+                        <label for="bsc">B.Sc</label>
+                     </p>
+                     <p>
+                        <input type="radio" id="bca" name="course" value="ba">
+                        <label for="bca">BA</label>
+                     </p>
+                  </div>
+
+
+
+                  <p>Choose the stream you would like to Enroll</p>
+                  <p>
+                     <select id="Stream">
+                        <option value="Select stream" selected>Select stream</option>
+                     </select>
+                  </p>
+                  <p>Select Category</p>
+                  <div class="radio-btn">
+                     <p>
+                        <input type="radio" id="general" value="General" name="category">
+                        <label for="gen">General</label>
+                     </p>
+                     <p>
+                        <input type="radio" id="obc" value="obc" name="category">
+                        <label for="obc">OBC</label>
+                     </p>
+                     <p>
+                        <input type="radio" id="sc" value="sc" name="category">
+                        <label for="sc">Sc/St</label>
+                     </p>
+                  </div>
+
+                  <p>Other topics you would like to hear about</p>
+                  <p>
+                     <textarea id="interest" name="user_interest"></textarea> <br />
+                  </p>
+               </div>
+
+            </fieldset>
+         </form>
+         <div class="footer">
+            <button onclick="store()" type="submit">Submit</button>
+         </div>
+
+      
+   </div>
+     <!-- Event,course offered and highlight code start from here -->
+   <div id="center">
+
+      <div id="one">
+
+         <h1>Events <a href="#" class="right"></a></h1>
+
+         <div class="wrap">
+            <div class="date">
+               <div class="day"><em>19</em>
+                  <div class="month"> <em>JULY</em>
+                  </div>
+               </div>
+            </div>
+            <p class="rightside"> <a href="#">Alumni Meet for Batch ( 2018 to 2020 ) </a>. </p>
+         </div>
+
+
+         <div class="wrap">
+            <div class="date">
+               <div class="day"><em>29</em>
+                  <div class="month"> <em>SEP</em>
+                  </div>
+               </div>
+            </div>
+            <p class="rightside"> <a href="#">K-CAT EMPLOYABILITY TEST From 29-SEP-22 to 01-OCT-22</a></p>
+         </div>
+
+
+         <div class="wrap">
+            <div class="date">
+               <div class="day"><em>24</em>
+                  <div class="month"><em>SEP</em>
+                  </div>
+               </div>
+            </div>
+            <p class="rightside"> <a href="#">NSS Day Celebration from ( 09 am - 11 am ).</a></p>
+         </div>
+
+
+         <div class="wrap">
+            <div class="date">
+               <div class="day"><em>01</em>
+                  <div class="month"><em>AUG</em>
+                  </div>
+               </div>
+            </div>
+            <p class="rightside"> <a href="#">AMEX Placement Drive ( Day 1 ). </a></p>
+         </div>
+      </div>
+      <div id="one">
+
+         <h1>Courses offered<a href="#"></a></h1>
+         <table border="0" style="font-size:13px; width:100%; padding:2.5%;">
+
+            <tr>
+               <td><strong>Bachelor of Technology</strong></td>
+               <td><b>Seats</b></td>
+            </tr>
+            <tr>
+               <td>Computer Science &amp; Engineering</td>
+               <td>120</td>
+            </tr>
+            <tr>
+               <td>Electronics &amp; Communication Engineering</td>
+               <td>160</td>
+            </tr>
+            <tr>
+               <td>Electrical &amp; Electronics Engineering</td>
+               <td>120</td>
+            </tr>
+            <tr>
+               <td>Mechanical Engineering</td>
+               <td>80</td>
+            </tr>
+            <tr>
+               <td>Information Technology</td>
+               <td>90</td>
+            </tr>
+            <tr>
+               <td>Civil Engineering</td>
+               <td>60</td>
+            </tr>
+            <tr>
+               <td style="font-style:italic;">SECOND SHIFT</td>
+            </tr>
+            <tr>
+               <td>Mechanical Engineering</td>
+               <td>60</td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td><strong>Master of Technology</strong></td>
+               <td><b>Seats</b></td>
+            </tr>
+            <tr>
+               <td>Computer Science &amp; Engineering</td>
+               <td>18</td>
+            </tr>
+            <tr>
+               <td>Electronics &amp; Communication Engineering</td>
+               <td>18</td>
+            </tr>
+         </table>
+
+         <br><br><br>
+
+         <br>
+      </div>
+
+      <div id="one">
+         <h1>Highlights<a href="#"></a></h1>
+         <p> <a href='#'>CONGRATULATIONS!!! to all students selected in "American Express". </a></p>
+         <p> <a href="#">Student List Selected in Google.</a> </p>
+         <p> <a href="#">Selection Criteria for Campus Drive &amp; Placement.</a> </p>
+         <p> <a href="#">Online Aptitude Practice session for B.Tech Final Year (All Branch).</a> </p>
+         <p> <a href="#">Blood Donation Camp on 30/09/22.</a> </p>
+         <p> <a href="#">K-CAT EMPLOYABILITY TEST Notice.</a></p>
+         <br>
+
+      </div>
+
+   </div>
+
+
+   <!-- faculty code start from here -->
+   <div class="container" id="faculty">
+      <h2>FACULTY</h2>
+      <div class="row">
+         <div class="column">
+            <a href=""><img src="image/prof1.png" /></a>
+            <a href="https://uiet.puchd.ac.in/?page_id=905" target="_blank">Dr.Susmita Kaur</a>
+
+
+         </div>
+         <div class="column">
+            <a href=""><img src="image/prof2.png" alt="" /></a>
+            <a href="https://uiet.puchd.ac.in/?page_id=57" target="_blank">Dr.Xavier singh</a>
+         </div>
+         <div class="column">
+            <a href=""><img src="image/prof3.png" alt="" /></a>
+            <a href="https://uiet.puchd.ac.in/?page_id=21" target="_blank">Dr.YK verma</a>
+         </div>
+      </div>
+   </div>
+
+   <!-- facilities code start from here -->
+   <div class="facilities">
+      <h2>FACILITIES</h2>
+      <div class="row">
+         <div class="column">
+            <a href=""><img src="image/lab.jpg" /></a>
+            <a href="">Research lab</a>
+         </div>
+         <div class="column">
+            <a href=""><img src="image/sports.png" alt="" /></a>
+            <a href="">Sports club</a>
+         </div>
+         <div class="column">
+            <a href=""><img src="image/lib.jpg" alt="" /></a>
+            <a href="">Library</a>
+         </div>
+         <div class="column">
+            <a href=""><img src="image/canteen.jpg" /></a>
+            <a href="">Canteen</a>
+         </div>
+      </div>
+   </div>
+
+
+
+   <!-- campus tour code start from here -->
+   <div class="video">
+      <iframe src="https://www.youtube-nocookie.com/embed/mIewXo41ynk" title="YouTube video player" frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+         allowfullscreen></iframe>
+   </div>
+
+
+
+
+   <!-- TESTIMONIALS -->
+
+   <section class="slider">
+      <h2>TESTIMONIAL</h2>
+      <div class="testimonial mySwiper">
+         <div class="testi-content swiper-wrapper">
+            <div class="slide swiper-slide">
+               <img src="/image/review1.jpg" alt="" class="image" />
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                  saepe provident dolorem a quaerat quo error facere nihil deleniti
+                  eligendi ipsum adipisci, fugit, architecto amet asperiores
+                  doloremque deserunt eum nemo.
+               </p>
+
+               <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+               <div class="details">
+                  <span class="name">Kaira Kumari</span>
+                  <span class="job">Zoology</span>
+               </div>
+            </div>
+            <div class="slide swiper-slide">
+               <img src="/image/review2.jpg" alt="" class="image" />
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                  saepe provident dolorem a quaerat quo error facere nihil deleniti
+                  eligendi ipsum adipisci, fugit, architecto amet asperiores
+                  doloremque deserunt eum nemo.
+               </p>
+
+               <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+               <div class="details">
+                  <span class="name">Ravi Prakash</span>
+                  <span class="job">Electrical Engineering</span>
+               </div>
+            </div>
+            <div class="slide swiper-slide">
+               <img src="/image/review3.jpg" alt="" class="image" />
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                  saepe provident dolorem a quaerat quo error facere nihil deleniti
+                  eligendi ipsum adipisci, fugit, architecto amet asperiores
+                  doloremque deserunt eum nemo.
+               </p>
+
+               <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+               <div class="details">
+                  <span class="name">Saanvi Gupta</span>
+                  <span class="job">Computer Science</span>
+               </div>
+            </div>
+            <div class="slide swiper-slide">
+               <img src="/image/review4.jpg" alt="" class="image" />
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                  saepe provident dolorem a quaerat quo error facere nihil deleniti
+                  eligendi ipsum adipisci, fugit, architecto amet asperiores
+                  doloremque deserunt eum nemo.
+               </p>
+
+               <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+               <div class="details">
+                  <span class="name">Emma Watson</span>
+                  <span class="job">Matheatics and Statistics</span>
+               </div>
+            </div>
+
+            <div class="slide swiper-slide">
+               <img src="/image/review5.jpg" alt="" class="image" />
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                  saepe provident dolorem a quaerat quo error facere nihil deleniti
+                  eligendi ipsum adipisci, fugit, architecto amet asperiores
+                  doloremque deserunt eum nemo.
+               </p>
+
+               <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+               <div class="details">
+                  <span class="name">Rohan Gupta</span>
+                  <span class="job">Economics</span>
+               </div>
+            </div>
+         </div>
+         <div class="swiper-button-next nav-btn"></div>
+         <div class="swiper-button-prev nav-btn"></div>
+         <div class="swiper-pagination"></div>
+      </div>
+   </section>
+
+
+   <!-- END OF TESTIMONIALS -->
+
+
+
+   <!-- contact form code start from here -->
+   <div class="content">
+      <h2>CONTACT FORM</h2>
+      <div class="contact">
+
+         <div class="other">
+            <div class="info">
+               <h2>More Methods </h2>
+               <h3>Email</h3>
+               <div class="social-wrap">
+                  <a href="mailto:ravi_university@gmail.com">
+                     ravi_university@gmail.com</a>
+               </div>
+               <h3>Connect</h3>
+               <div class="social-wrap">
+                  <a href="http://instagram.com" target="_blank"><img
+                        src="https://img.icons8.com/fluency/48/40C057/instagram-new.png" /></a>
+
+                  <a href="http://twitter.com" target="_blank"><img
+                        src="https://img.icons8.com/fluency/48/000000/twitter.png" /></a>
+
+                  <a href="http://facebook.com" target="_blank"><img
+                        src="https://img.icons8.com/fluency/48/000000/facebook-new.png" /></a>
+
+                  <a href="http://linkedin.com" target="_blank"><img
+                        src="https://img.icons8.com/fluency/48/000000/linkedin.png" /></a>
+               </div>
+            </div>
+         </div>
+         <div class="form">
+            <h1>Get In Touch</h1>
+            <form action="">
+               <div class="flex-rev">
+                  <input type="text" placeholder="Ravi Prakash" name="name" id="name" />
+                  <label for="name">Full Name</label>
+               </div>
+               <div class="flex-rev">
+                  <input type="email" placeholder="ravi_university@gmail.com" name="email" id="email" />
+                  <label for="email">Your Email</label>
+               </div>
+
+               <div class="flex-rev">
+                  <textarea placeholder="I have an idea for a project...." name="message" id="message" /></textarea>
+                  <label for="message">Email Message</label>
+               </div>
+               <button>Send Email</button>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <!-- footer code start from here -->
+   <div id="footer">
+
+      <div id="footer-header"><span>Top Recrutiers</span></div>
+      <div id="m">
+         <marquee>
+            <image src="image/amex.png" height="80" width="140">
+               <image src="image/accenture.png" height="80" width="140">
+                  <image src="image/amazon.png" height="80" width="140">
+                     <image src="image/google.jpg" height="80" width="140">
+                        <image src="image/cogni.jpg" height="80" width="140">
+                           <image src="image/delo.png" height="80" width="140">
+                              <image src="image/hcl.png" height="80" width="140">
+                                 <image src="image/hp.png" height="80" width="140">
+                                    <image src="image/indiamart.png" height="80" width="140">
+                                       <image src="image/infosys.png" height="80" width="140">
+                                          <image src="image/de.png" height="90" width="140">
+                                             <image src="image/tcs.png" height="80" width="140">
+                                                <image src="image/zs.jpg" height="80" width="140">
+                                                   <image src="image/samsung.png" height="80" width="140">
+                                                      <image src="image/ibm.png" height="80" width="140">
+                                                         <image src="image/expedia.png" height="80" width="140">
+                                                            <image src="image/daffodil.png" height="80" width="140">
+                                                               <image src="image/walmart.png" height="80" width="140">
+                                                                  <image src="image/flipkart.png" height="80"
+                                                                     width="140">
+         </marquee>
+      </div>
+   </div>
+   <!-- add cdn file for swiper.js library -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script src="/index.js"></script>
+
+
+</body>
+
+</html>
